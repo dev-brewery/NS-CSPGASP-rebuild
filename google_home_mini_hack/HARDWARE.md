@@ -16,6 +16,8 @@ Based on PCB markings (Model H0A), the connector has the following pinout:
 4.  **3V3**: 3.3V Logic Power (Powers the Cypress chip)
 5.  **WIFI_DC5V**: 5V Power (Powers the RGB LEDs)
 
+> **Note on `WIFI_DC5V`:** Despite the "WIFI" label, this pin carries **no Wi-Fi data**. It is simply the 5V power rail required to drive the bright RGB LEDs. In the original device, this power likely came from the Wi-Fi power domain. For this mod, just connect it to a **5V** source (RPi Pin 2).
+
 ### Wiring to Raspberry Pi Zero 2 W
 *   **3V3** -> RPi Pin 1 (3.3V)
 *   **WIFI_DC5V** -> RPi Pin 2 (5V)
