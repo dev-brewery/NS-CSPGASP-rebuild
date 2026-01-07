@@ -22,9 +22,9 @@ def main():
     setup_audio()
     setup_mute_switch()
 
-    print("[INFO] Listening for USB Top Board events...")
-    # This loop would poll the USB device found by probe_usb.py
-    # or read from /dev/hidrawX
+    print("[INFO] Listening for I2C Top Board events...")
+    # This loop would poll the I2C device (e.g., Cypress CapSense)
+    # using smbus2 or a similar library.
 
     try:
         while True:
